@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import AosLoader from "../components/aos-loader";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,7 +36,7 @@ data-aos-delay="200"
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       
-
+      <AosLoader />
         {children}
         
       </body>
